@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed; /* Replace with your background image URL */
+    background-size: cover;
+    color: #fff;
+}
+
+#container {
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100%; /* Full width for responsiveness */
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #333;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.scoreboard p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.OK {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745; /* Bootstrap success color */
+}
+
+.scratch-link {
+    display: none; /* Initially hidden; will be shown via JavaScript */
+    padding: 10px 20px;
+    background-color: #ffc107; /* Bootstrap warning color */
+}
+
+.scratch-link:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Smaller header on mobile */
+    }
+
+    .cell {
+        height: 80px; /* Reduce height for mobile */
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .scoreboard p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .button, .scratch-link {
+        padding: 12px 18px; /* Adjust padding for mobile */
+        font-size: 1em; /* Ensure button text is readable */
+    }
+
+    #container {
+        margin: 20px auto; /* Reduced margin for smaller screens */
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
