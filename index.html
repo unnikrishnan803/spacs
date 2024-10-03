@@ -4,65 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to SPACS CEC</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('https://www.shutterstock.com/image-vector/modern-dark-blue-abstract-wave-260nw-1845360106.jpg');
-            background-size: cover; /* Full cover of the background */
+            background-size: cover;
             background-position: center;
-            color: #333; /* Dark text color for better readability */
+            color: #333;
         }
         .container {
             max-width: 600px;
-            margin: 100px auto; /* Add more margin for top spacing */
+            margin: 100px auto;
             padding: 30px;
-            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            text-align: center; /* Center align text within container */
+            text-align: center;
         }
         h1 {
-            color: #2196F3; /* Blue color */
-            margin-bottom: 20px; /* Add margin below the header */
+            color: #2196F3;
+            margin-bottom: 20px;
         }
         label {
             display: block;
             margin: 15px 0 5px;
-            color: #333; /* Dark text color */
-            font-weight: bold; /* Make labels bold */
+            color: #333;
+            font-weight: bold;
         }
         input, select, button {
             width: 100%;
             padding: 12px;
             margin-bottom: 15px;
-            border: 1px solid #ccc; /* Lighter border */
+            border: 1px solid #ccc;
             border-radius: 6px;
-            transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
         input:focus, select:focus {
-            border-color: #2196F3; /* Highlight border color */
-            box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Glow effect on focus */
-            outline: none; /* Remove default outline */
+            border-color: #2196F3;
+            box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+            outline: none;
         }
         button {
-            background-color: #2196F3; /* Blue color */
+            background-color: #2196F3;
             color: white;
             border: none;
             cursor: pointer;
-            font-size: 16px; /* Increase font size */
-            transition: background-color 0.3s; /* Smooth background transition */
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #1976D2; /* Darker blue on hover */
+            background-color: #1976D2;
         }
         .logo {
             width: 100%;
             height: auto;
             border-radius: 12px;
-            margin-bottom: 20px; /* Add margin below logo */
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -75,7 +74,7 @@
             <input type="text" id="name" placeholder="Enter your name" required>
 
             <label for="group">Group Number (1 to 10):</label>
-            <input type="number" id="group" min="1" max="10" placeholder="Enter group number (1-10)" required>
+            <input type="number" id="group" min="1" max="10" placeholder="Enter group number" required>
 
             <label for="class">Class:</label>
             <select id="class" required>
@@ -91,3 +90,5 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+  
