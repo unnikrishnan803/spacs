@@ -9,18 +9,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://www.shutterstock.com/image-vector/modern-dark-blue-abstract-wave-260nw-1845360106.jpg');
-            background-size: cover;
-            background-position: center;
+            background: #f0f0f0;
             color: #333;
         }
         .container {
             max-width: 600px;
             margin: 100px auto;
             padding: 30px;
-            background: rgba(255, 255, 255, 0.9);
+            background: #fff;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         h1 {
@@ -39,12 +37,6 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 6px;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        input:focus, select:focus {
-            border-color: #2196F3;
-            box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
-            outline: none;
         }
         button {
             background-color: #2196F3;
@@ -52,22 +44,14 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
-            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #1976D2;
-        }
-        .logo {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="Picsart_24-09-28_16-11-45-359.jpg" alt="SPACS CEC Logo" class="logo">
         <h1>Welcome to SPACS CEC</h1>
         <form id="welcome-form">
             <label for="name">Name:</label>
@@ -87,8 +71,5 @@
             <button type="submit">Next</button>
         </form>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
-
-  
